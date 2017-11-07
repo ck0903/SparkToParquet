@@ -1,1 +1,3 @@
 /target/
+.idea/
+spark_to_parquet.iml

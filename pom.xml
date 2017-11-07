@@ -5,8 +5,11 @@
 	<artifactId>spark_to_parquet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spark To Parquet</name>
-	<description>Spark To Parquet Sample
-Spark 写入数据到Parquet文件，并且由SparkThriftServer负责驱动JDBC，暴露SQL引擎给第三方提供查询。实现了准实时数据写入和查询分析。</description>
+	<description>
+		Spark To Parquet Sample
+		Spark 写入数据到Parquet文件，并且由SparkThriftServer负责驱动JDBC，
+		 暴露SQL引擎给第三方提供查询。实现了准实时数据写入和查询分析。
+	</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spark.version>1.5.1</spark.version>

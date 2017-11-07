@@ -9,19 +9,19 @@ import java.util.regex.Pattern;
  */
 public class ApacheAccessLog implements Serializable {
 	/**
-	 * 
+	 *  124.67.32.161 - - [10/Apr/2016:05:37:36 +0800] "GET /blog/app_backend.html HTTP/1.1" 200 26450
 	 */
 	private static final long serialVersionUID = 6681372116317508248L;
 
-	private String ipAddress;
-	private String clientIdentd;
-	private String userID;
-	private String dateTimeString;
-	private String method;
-	private String endpoint;
-	private String protocol;
-	private int responseCode;
-	private long contentSize;
+	private String ipAddress;  //ip地址
+	private String clientIdentd;  // 客户端认证
+	private String userID; //用于ID
+	private String dateTimeString;  // 时间字符串
+	private String method;   //访问方式PUT GET POST DELETE
+	private String endpoint;  // request,qing qiu 的内容
+	private String protocol;  // 协议
+	private int responseCode;  // 相应码
+	private long contentSize;   // 返回内容大小
 
 	private ApacheAccessLog(String ipAddress, String clientIdentd, String userID, String dateTime, String method,
 			String endpoint, String protocol, String responseCode, String contentSize) {
